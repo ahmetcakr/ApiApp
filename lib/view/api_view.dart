@@ -19,6 +19,11 @@ class _ApiViewState extends State<ApiView> {
   }
 
   Future<void> getItems() async {
+    // Dio().options.headers['x-api-key'] = 'b6f8d8f3';
+    // Dio().options.headers['Content-Type'] = 'application/json';
+    // Dio().options.headers['Accept'] = 'application/json';
+    // Dio().options.headers['Accept-Language'] = 'en';
+
     final response =
         await Dio().get('https://jsonplaceholder.typicode.com/posts');
 

@@ -1,4 +1,4 @@
-import 'package:api_json/view/api_view.dart';
+import 'package:api_json/view/dynamic_widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
                 borderRadius:
                     BorderRadius.vertical(bottom: Radius.circular(20)))),
       ),
-      home: const ApiView(),
+      home: DynamicWidgets(),
     );
   }
 }
